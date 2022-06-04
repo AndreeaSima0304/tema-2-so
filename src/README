@@ -1,0 +1,16 @@
+== Tema 2 SO ==
+
+Am declarat in structura SO_FILE mai multe campuri pentru a rezolva cerintele: buffer-ul in care
+sunt memorate datele, file descriptorul, pozitia curenta, numarul de bytes cititi, un flag de eroare,
+un flag care indica daca ultima operatie a fost write si un flag care indica daca
+ultima operatie a fost read.
+
+Pentru a implementa functiile din so_stdio.h am folosit functii de sistem.
+Pentru so_fopen am folosit functia open pentru a deschide fisierul in modul corespunzator
+si am initializat campurile din structura.
+Pentru so_fclose am folosit functia close pentru a inchide fisierul si am eliberat memoria
+folosita de structura.
+Pentru so_fread si so_fwrite am folosit so_fgetc si so_fputc.
+
+Pentru a compila si a genera biblioteca dinamica am folosit indicatiile din laboratorul 1 
+(Crearea unei biblioteci partajate). 
